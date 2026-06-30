@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vibe Fotos - Camila Geovana | Tabela de Preços 2026</title>
+<style>
+  :root {
+    --black: #2d2d2d;
+    --gray: #6b6b6b;
+    --light: #f7f7f7;
+    --border: #e2e2e2;
+    --accent: #2d2d2d;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--black);
+    background: #fff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 48px 32px 64px;
+  }
+  header {
+    text-align: center;
+    padding: 20px 0 36px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 36px;
+  }
+  .logo-svg {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .logo-svg .brand {
+    font-size: 44px;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .subtitle {
+    margin-top: 8px;
+    font-size: 13px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gray);
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: 0.04em;
+  }
+  .validade {
+    text-align: center;
+    color: var(--gray);
+    font-size: 13px;
+    margin-bottom: 38px;
+  }
+  .section-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    color: var(--gray);
+    margin: 42px 0 14px;
+    border-left: 3px solid var(--black);
+    padding-left: 10px;
+  }
+  /* Pacotes grid */
+  .packages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 12px;
+  }
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px 22px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .card.featured {
+    border: 1.8px solid var(--black);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.06);
+  }
+  .card .tag {
+    position: absolute;
+    top: -11px;
+    right: 18px;
+    background: var(--black);
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+  .card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .card .for {
+    font-size: 12.5px;
+    color: var(--gray);
+    margin-bottom: 14px;
+    min-height: 32px;
+  }
+  .card .price {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 2px;
+  }
+  .card .price span {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+  }
+  .card ul {
+    list-style: none;
+    margin: 16px 0 18px;
+    font-size: 14px;
+    color: #3a3a3a;
+    flex-grow: 1;
+  }
+  .card ul li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #ececec;
+  }
+  .card ul li:last-child { border-bottom: none; }
+  .card ul li::before {
+    content: "✓";
+    margin-right: 8px;
+    color: #555;
+  }
+  .btn-outline {
+    display: block;
+    text-align: center;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 13px;
+    text-decoration: none;
+    color: var(--black);
+  }
+  /* Tabela eventos */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  th {
+    text-align: left;
+    background: var(--light);
+    padding: 14px 18px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--gray);
+    font-weight: 600;
+  }
+  td {
+    padding: 14px 18px;
+    border-top: 1px solid var(--border);
+  }
+  tr td:last-child {
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: right;
+  }
+  .note {
+    font-size: 12.5px;
+    color: var(--gray);
+    margin-top: 10px;
+  }
+  /* Extras */
+  .extras {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    font-size: 14px;
+  }
+  .extra-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: #fcfcfc;
+  }
+  .extra-item span:last-child { font-weight: 600; }
+  /* Footer */
+  footer {
+    margin-top: 48px;
+    padding-top: 28px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    font-size: 13.5px;
+    color: var(--gray);
+  }
+  .contact strong {
+    color: var(--black);
+    display: block;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+  .badge {
+    font-size: 11.5px;
+    background: var(--light);
+    padding: 10px 14px;
+    border-radius: 10px;
+    max-width: 380px;
+  }
+  @media (max-width: 720px) {
+    .packages { grid-template-columns: 1fr; }
+    .extras { grid-template-columns: 1fr; }
+    footer { flex-direction: column; }
+  }
+  @media print {
+    body { background: #fff; }
+    .page { padding: 0; }
+    .btn-outline { display: none; }
+    .card { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <!-- LOGO VIBE FOTOS - SVG inline para funcionar na prévia -->
+    <div class="logo-svg">
+      <svg viewBox="0 0 600 140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Vibe Fotos Camila Geovana" style="width:100%;height:auto">
+        <!-- Camera icon -->
+        <g fill="none" stroke="#434343" stroke-width="4.5" stroke-linejoin="round">
+          <rect x="258" y="18" width="84" height="48" rx="2"/>
+          <polyline points="276,18 284,8 316,8 324,18"/>
+          <circle cx="300" cy="42" r="20"/>
+          <circle cx="329" cy="26" r="2.5" fill="#434343" stroke="none"/>
+        </g>
+        <!-- VIBE FOTOS -->
+        <text x="300" y="105" text-anchor="middle" fill="#434343" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="300" letter-spacing="3">
+          VIBE FOTOS
+        </text>
+        <!-- CAMILA GEOVANA -->
+        <text x="300" y="128" text-anchor="middle" fill="#434343" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="300" letter-spacing="12">
+          CAMILA GEOVANA
+        </text>
+      </svg>
+    </div>
+    <div class="subtitle">Fotografia com alma • Tabela de Preços</div>
+  </header>
+
+  <h1>Ensaios Fotográficos</h1>
+  <p class="validade">Válido para 2026 • Estúdio / Externa na mesma cidade</p>
+
+  <div class="packages">
+    <div class="card">
+      <h3>Essencial Vibe</h3>
+      <div class="for">Perfeito para perfil, redes sociais e retratos rápidos.</div>
+      <div class="price">R$ 280 <span>/ ensaio</span></div>
+      <ul>
+        <li>45 min de fotos</li>
+        <li>1 look</li>
+        <li>15 fotos editadas em alta</li>
+        <li>Entrega via galeria online em 7 dias</li>
+        <li>Todas as fotos brutas no drive</li>
+      </ul>
+      <a class="btn-outline" href="#">Agendar</a>
+    </div>
+
+    <div class="card featured">
+      <div class="tag">Mais escolhido</div>
+      <h3>Vibe Completo</h3>
+      <div class="for">Individual, casal, gestante, família, infantil.</div>
+      <div class="price">R$ 450 <span>/ ensaio</span></div>
+      <ul>
+        <li>1h30 de fotos</li>
+        <li>2 looks / cenários</li>
+        <li>30 fotos editadas em alta</li>
+        <li>Entrega em 10 dias</li>
+        <li>Revelação de 5 fotos 15x21</li>
+        <li>Direção de pose completa</li>
+      </ul>
+      <a class="btn-outline" href="#">Agendar</a>
+    </div>
+
+    <div class="card">
+      <h3>Vibe Premium</h3>
+      <div class="for">Para quem quer um ensaio cinematográfico completo.</div>
+      <div class="price">R$ 680 <span>/ ensaio</span></div>
+      <ul>
+        <li>2h30 de fotos</li>
+        <li>3 looks / até 2 locações</li>
+        <li>50 fotos editadas em alta</li>
+        <li>Entrega em 14 dias</li>
+        <li>15 fotos impressas + polaroids</li>
+        <li>Mini vídeo Reels vertical</li>
+      </ul>
+      <a class="btn-outline" href="#">Agendar</a>
+    </div>
+  </div>
+
+  <div class="section-title">Eventos & Coberturas</div>
+  <table>
+    <thead>
+      <tr>
+        <th>Serviço</th>
+        <th>O que inclui</th>
+        <th>Investimento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Aniversário / Chá / Batizado</strong><br><span style="color:#6b6b6b;font-size:12.5px">Até 3h</span></td>
+        <td>100+ fotos editadas, galeria online</td>
+        <td>R$ 520</td>
+      </tr>
+      <tr>
+        <td><strong>Ensaio 15 anos</strong><br><span style="color:#6b6b6b;font-size:12.5px">Ensaio + festa</span></td>
+        <td>Ensaio Vibe Completo + 3h de festa</td>
+        <td>R$ 890</td>
+      </tr>
+      <tr>
+        <td><strong>Casamento / Noivado – Essencial</strong><br><span style="color:#6b6b6b;font-size:12.5px">Até 4h</span></td>
+        <td>250 fotos editadas</td>
+        <td>R$ 1.200</td>
+      </tr>
+      <tr>
+        <td><strong>Casamento – Vibe Completo</strong><br><span style="color:#6b6b6b;font-size:12.5px">Até 8h</span></td>
+        <td>500+ fotos, pré-wedding, álbum 30x30</td>
+        <td>R$ 2.400</td>
+      </tr>
+      <tr>
+        <td><strong>Corporativo / Produtos</strong><br><span style="color:#6b6b6b;font-size:12.5px">Sob orçamento</span></td>
+        <td>Foto de equipe, headshot, produtos</td>
+        <td>a partir de R$ 350/h</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="note">Deslocamento fora da cidade: R$ 1,20/km. Hora extra em eventos: R$ 150/h.</p>
+
+  <div class="section-title">Adicionais</div>
+  <div class="extras">
+    <div class="extra-item"><span>Foto extra editada</span><span>R$ 12</span></div>
+    <div class="extra-item"><span>Maquiagem profissional</span><span>R$ 120</span></div>
+    <div class="extra-item"><span>Álbum 20x20 – 20 páginas</span><span>R$ 290</span></div>
+    <div class="extra-item"><span>Entrega expressa 48h</span><span>R$ 80</span></div>
+    <div class="extra-item"><span>Vídeo Reels do ensaio</span><span>R$ 90</span></div>
+    <div class="extra-item"><span>Fotos impressas 15x21</span><span>R$ 6 / un</span></div>
+  </div>
+
+  <footer>
+    <div class="contact">
+      <strong>Vibe Fotos • Camila Geovana</strong>
+      WhatsApp: (31) 99186-0038<br>
+      Instagram: @vibefotos.camila<br>
+      vibefotos@email.com
+    </div>
+    <div class="badge">
+      <strong>Como funciona:</strong> 50% para reservar a data via Pix. Restante na entrega da galeria. Parcelo em até 3x no cartão. Todos os pacotes incluem tratamento profissional de cor e pele natural.
+    </div>
+  </footer>
+</div>
+
+<!-- 
+  Quer usar sua logo JPG original?
+  Troque o bloco <div class="logo-svg">...</div> por:
+  <img src="vibe_logo.jpg" alt="Vibe Fotos" style="max-width:340px;width:100%">
+  O arquivo vibe_logo.jpg está salvo na mesma pasta.
+-->
+</body>
+</html>
